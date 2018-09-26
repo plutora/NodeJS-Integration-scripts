@@ -2,7 +2,8 @@
 This script will connect to Jenkins using Basic Authentication and trigger the execution of a Job called 'Demo' using API' requests. 
 It will then copy the log file from Jenkins to the execution log in Plutora as well as send build progress updates back to the Plutora UI
 
-To execute this script on your own instance of Plutora you will need to replace all credentials and API end points. These are highlighted as comments like this: <<INSERT Text >>
+To execute this script on your own instance of Plutora you will need to replace all credentials and API end points. 
+These are highlighted as comments like this: <<INSERT Text >>
 */
 
 const https = require("https");
