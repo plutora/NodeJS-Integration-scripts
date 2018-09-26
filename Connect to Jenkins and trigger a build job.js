@@ -37,7 +37,7 @@ let run = function (args) {
                                 options.path = "/job/Demo/" + number + "/consoleText";
                                 return req(options).then((log) => {
                                     //Console.log will write to the Plutora execution log file
-									console.log("Build Number: " + number);
+				    console.log("Build Number: " + number);
                                     console.log("Build Log: " + log);
                                     if (data.result === "SUCCESS") {
                                         return resolve();
@@ -48,7 +48,7 @@ let run = function (args) {
                                     return reject(err);
                                 });
                             }
-							//Notifier.progress will send updates back to the UI in Plutora
+			    //Notifier.progress will send updates back to the UI in Plutora
                             notifier.progress('Building...' + data.executor.progress + '%');
                         }, (err) => {
                             clearInterval(interval);
